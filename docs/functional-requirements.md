@@ -1,28 +1,31 @@
-# Functional Requirements
+# TODO App - Functional Requirements
 
-## Core Functional Requirements for TODO App
+## Overview
+This document outlines the core functional requirements for the TODO application.
 
-### 1. Task Due Date Management
-- Users must be able to add a due date to a task
-- Due dates should be optional for each task
-- The system should support date selection/input
+## Core Features
 
-### 2. Task Editing
-- Tasks must be editable after creation
-- Users should be able to modify task details including:
-  - Task title/description
-  - Due date
-  - Other task properties
+### 1. Task Management
+- **Add Tasks**: Users should be able to create new tasks with a title
+- **Edit Tasks**: Users should be able to modify task details (title, description, etc.)
+- **Delete Tasks**: Users should be able to remove tasks from their list
 
-### 3. Task Sorting
-- Tasks should be able to be sorted in a specific order
-- Sorting options may include:
-  - Manual/custom ordering
-  - By due date
-  - By creation date
-  - By completion status
+### 2. Due Dates
+- **Set Due Date**: Users should be able to assign a due date to any task
+- **View Due Date**: Due dates should be clearly visible on tasks
+- **Modify Due Date**: Users should be able to update or remove due dates from existing tasks
 
-### 4. Task Completion
-- Tasks must be able to be marked as completed
-- Users should be able to toggle completion status
-- Completed tasks should be visually distinguishable from incomplete tasks
+### 3. Task Completion
+- **Toggle Completion**: Users should be able to mark tasks as complete or incomplete
+- **Visual Indicator**: Completed tasks should have a distinct visual appearance (e.g., checkmark, strikethrough)
+- **Completion Status**: The system should track whether a task is complete or pending
+
+### 4. Task Sorting
+- **Sort by Due Date**: Tasks should be sortable by due date (ascending/descending)
+- **Sort by Completion Status**: Tasks should be sortable by completion status (complete/incomplete first)
+- **Sort by Creation Order**: Tasks should be sortable by the order they were created
+- **Custom Order**: Users should be able to manually reorder tasks as desired
+
+## Non-Functional Requirements
+- Tasks should persist (be saved and retrievable)
+- The interface should be responsive and user-friendly
